@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5101267e5d7804b3f9e3806cbded5ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  target: {fileID: 0}
+  target: {fileID: 893080925}
   moveSpeed: 30
   attackStrength: 30
   attackRangeFromPlayer: 4
@@ -1539,7 +1539,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
