@@ -5,9 +5,8 @@ public class MapleAttack : AttackAction
     public override void Execute()
     {
         GameObject _projectile = Instantiate(projectileObject, playerObject.transform.position, playerObject.transform.rotation);
-        ProjectileDistanceChecker _projectileDistChecker = GetComponent<ProjectileDistanceChecker>();
+        ProjectileDistanceChecker _projectileDistChecker = _projectile.GetComponent<ProjectileDistanceChecker>();
 
-        _projectileDistChecker.Init(maxDistFromPlayer, playerObject.transform.position); 
 
         Rigidbody rb = _projectile.GetComponent<Rigidbody>();
 
@@ -16,5 +15,6 @@ public class MapleAttack : AttackAction
         }
 
         rb.linearVelocity = _projectile.transform.forward * projectileSpeed; 
+        _projectileDistChecker.Init(maxDistFromPlayer, playerObject.transform.position); 
     }
 }
