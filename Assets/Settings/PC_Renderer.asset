@@ -27,7 +27,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 7833122117494664109}
   - {fileID: 7387789951082972401}
-  m_RendererFeatureMap: ad6b866f10d7b46cf144807dd1b38666
+  - {fileID: 4664943327642629624}
+  m_RendererFeatureMap: ad6b866f10d7b46cf144807dd1b38666f8b577953d35bd40
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -56,6 +57,30 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 0
+--- !u!114 &4664943327642629624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af24e90db4bf58443aff8888b8b7e207, type: 3}
+  m_Name: VolumetricCloudsURP
+  m_EditorClassIdentifier: VolumetricCloudsURP::VolumetricCloudsURP
+  m_Active: 1
+  material: {fileID: 2100000, guid: 3748131af20412e478461c6445c73923, type: 2}
+  renderingDebugger: 0
+  reflectionProbe: 1
+  resolutionScale: 0.452
+  upscaleMode: 0
+  preferredRenderMode: 1
+  ambientProbe: 1
+  sunAttenuation: 1
+  resetOnStart: 1
+  outputDepth: 1
+  depthTexture: 0
 --- !u!114 &7387789951082972401
 MonoBehaviour:
   m_ObjectHideFlags: 0
