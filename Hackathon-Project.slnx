@@ -1,4 +1,6 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="com.Brogrammist.JSAM.Editor.csproj" />
+  <Project Path="com.Brogrammist.JSAM.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
 </Solution>
