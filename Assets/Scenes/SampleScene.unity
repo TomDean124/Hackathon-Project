@@ -1090,7 +1090,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!54 &506865506
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &508990430
@@ -1412,7 +1412,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &542171547
@@ -1920,7 +1920,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &610999092
@@ -3047,7 +3047,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &896725597
@@ -3246,7 +3246,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &935821843
@@ -3574,7 +3574,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &976683445
@@ -3773,7 +3773,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &988992537
@@ -4407,7 +4407,7 @@ MonoBehaviour:
   target: {fileID: 893080925}
   moveSpeed: 15
   attackStrength: 10
-  attackRangeFromPlayer: 5
+  attackRangeFromPlayer: 3
   cooldownTime: 10
   m_timer: 0
 --- !u!195 &1217956327
