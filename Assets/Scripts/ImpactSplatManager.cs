@@ -2,12 +2,25 @@ using UnityEngine;
 
 public class ImpactSplatManager : MonoBehaviour
 {
-    public GameObject collisionPrefab; 
+    public GameObject decalPrefab; 
     public float offset; 
+    public float _rayLength;
 
-    private void OnTriggerEnter(Collision collision)
+
+
+ void OnCollisionEnter(Collision collision)
     {
-        ContactPoint _intersectionPoint = collision.contacts[0];
-        GameObject _splatObject = Instantiate(collisionPrefab, _intersectionPoint.point + (_intersectionPoint.normal * offset), Quaternion.LookRotation(_intersectionPoint.normal));
+        if(collision.gameObject.tag == "Environment")
+        {
+            ContactPoint contact = collision.contacts[0];
+
+            Vector3 spawnPosition = contact.point + contact.normal * offset;
+
+            Quaternion rotation = Quaternion.LookRotation(-contact.normal);
+
+            Instantiate(decalPrefab, spawnPosition, rotation);
+
+            Destroy(gameObject);
+        }
     }
 }

@@ -1,16 +1,30 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private int m_sceneToLoadIndex = 0; 
+    [SerializeField] private int m_restartSceneIndex = 1;
+
+    void OnEnable()
     {
-        
+        GameManager.OnDeath += ShowRestartGameMenu; 
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDisable()
     {
-        
+        GameManager.OnDeath -= ShowRestartGameMenu; 
     }
+
+    private void ShowRestartGameMenu()
+    {
+        SceneManager.LoadScene(m_restartSceneIndex);
+    }
+
+    public void RestartGame()
+    {
+        Debug.Log("Attempting to load back into the scene!");
+        SceneManager.LoadScene(m_sceneToLoadIndex);
+    } 
+
 }

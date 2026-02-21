@@ -18,10 +18,15 @@ public class Health : MonoBehaviour
     public void TakeDamage(float _damage)
     {   
         currentHealth -= _damage; 
-        if(currentHealth <= 0)
+
+        if(currentHealth <= 0 && gameObject.tag != "Player")
+        {
+            Destroy(gameObject);
+        }
+        
+        if(currentHealth <= 0 && gameObject.tag == "Player")
         {
             GameManager.Instance.TriggerDeath();
-            Destroy(gameObject);
         }
 
         //Tells the Game Engine that the object has taken damage, methods that are interlaced with the event being called gets triggered
