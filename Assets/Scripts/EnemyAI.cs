@@ -89,4 +89,10 @@ public class EnemyAI : MonoBehaviour
             break;
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red; 
+        Gizmos.DrawWireSphere(transform.position, attackRangeFromPlayer);
+    }
 }
