@@ -2368,10 +2368,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817fc6fe11c5d4618a17e0d021037bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  _sfxAudioSource: {fileID: 377567831}
-  _musicAudioSource: {fileID: 935894041}
-  walkingSounds:
-  - {fileID: 8300000, guid: 6979b073816574194925b6ee6bfccdc4, type: 3}
+  sfxAudioSource: {fileID: 377567831}
+  musicAudioSource: {fileID: 935894041}
+  shootSound: {fileID: 8300000, guid: 0c98fe9c0b67f43b3bd9dad7fe5337b0, type: 3}
+  splashSound: {fileID: 8300000, guid: 7b397956a4f4346eeb57cc6bf0179b3f, type: 3}
 --- !u!1 &1276896514
 GameObject:
   m_ObjectHideFlags: 0

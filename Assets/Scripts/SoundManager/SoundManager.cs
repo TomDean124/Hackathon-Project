@@ -3,32 +3,35 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     [Header("Audio Sources")]
-    public AudioSource _sfxAudioSource; 
-    public AudioSource _musicAudioSource;
+    public AudioSource sfxAudioSource; 
+    public AudioSource musicAudioSource;
 
     [Header("Audio Clips")]
-    public AudioClip[] walkingSounds;
+    public AudioClip shootSound;
+    public AudioClip splashSound;
 
-    [Header("Mu")]
+    public static SoundManager Instance;
 
-    private float m_walkTimer;
-    private float intervalBetweenWalkSounds = 3f; 
-
-    public void PlaySound(AudioClip _clip)
+    private void Awake()
     {
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        if(Instance == null)
         {
-            m_walkTimer += Time.deltaTime;
-            if(m_walkTimer >= intervalBetweenWalkSounds)
-            {
-                int _randomNum = Random.Range(0, walkingSounds.Length);
-                if(walkingSounds[_randomNum] != null)
-                {
-                    _sfxAudioSource.PlayOneShot(walkingSounds[_randomNum]);
-                }
-            }
-
+            Instance = this; 
         }
-        _sfxAudioSource.PlayOneShot(_clip); 
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+    public void PlayShootSound()
+    {
+        sfxAudioSource.PlayOneShot(shootSound); 
+    }
+
+    public void PlaySplashSound()
+    {
+        sfxAudioSource.PlayOneShot(splashSound);
     }
 }

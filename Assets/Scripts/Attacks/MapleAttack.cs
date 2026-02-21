@@ -5,6 +5,7 @@ public class MapleAttack : AttackAction
     public override void Execute()
     {
         GameObject _projectile = Instantiate(projectileObject, playerObject.transform.position, playerObject.transform.rotation);
+        SoundManager.Instance.PlayShootSound();
         ProjectileDistanceChecker _projectileDistChecker = _projectile.GetComponent<ProjectileDistanceChecker>();
 
 

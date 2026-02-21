@@ -20,6 +20,8 @@ public class ImpactSplatManager : MonoBehaviour
 
             Instantiate(decalPrefab, spawnPosition, rotation);
 
+            SoundManager.Instance.PlaySplashSound();
+
             Destroy(gameObject);
         }
     }
