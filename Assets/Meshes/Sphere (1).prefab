@@ -168,6 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb48c5e965c84d5a9fa21c5147a5d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  decalPrefab: {fileID: 968745011941252364, guid: cc681dc248e31438cb953ddde49fcc06, type: 3}
-  offset: 0
+  decalPrefab: {fileID: 4855137888256714749, guid: 0d98a82e17db9497287009c9adfd0cdd, type: 3}
+  offset: 1.5
   _rayLength: 0
